@@ -45,7 +45,6 @@ The Random Forest model is selected to be tuned. The best parameter values are: 
 However, because of the high n_estimator value, I’ve decided to go with the parameter values that give the 3rd best performance with a bit of changes, which is not very different than the best performance: n_estimators: 200 min_samples_split: 5 min_samples_leaf: 1 max_features: sqrt max_depth: 100 bootstrap: False
 
 The performance compares to previous models is:
-
 | Algorithm           | MAE   | RMSE   | R2    |
 |---------------------|-------|--------|-------|
 | Benchmark model     | 9.056 | 14.017 | 0.192 |
@@ -53,6 +52,7 @@ The performance compares to previous models is:
 | Random forest       | 2.862 | 5.534  | 0.874 |
 | Gradient boosting   | 5.848 | 9.721  | 0.611 |
 | Tuned Random Forest | 5.011 | 8.786  | 0.682 |
+
 Here is the True vs. Predicted value plot for the tuned random forest model. X-axis is the true values and y-axis the predicted values.
 
 ![Performance graph of tuned Random Forest](/images/tuned_random_forest.png)
