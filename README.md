@@ -39,6 +39,7 @@ Here are the performance results before tuning:
 | Decision tree     | 7.311 | 12.173 | 0.391 |
 | Random forest     | 2.862 | 5.534  | 0.874 |
 | Gradient boosting | 5.848 | 9.721  | 0.611 |
+
 The Random Forest model is selected to be tuned. The best parameter values are: n_estimators: 1800 min_samples_split: 10 min_samples_leaf: 2 max_features: auto max_depth: 50 bootstrap: False
 
 However, because of the high n_estimator value, I’ve decided to go with the parameter values that give the 3rd best performance with a bit of changes, which is not very different than the best performance: n_estimators: 200 min_samples_split: 5 min_samples_leaf: 1 max_features: sqrt max_depth: 100 bootstrap: False
